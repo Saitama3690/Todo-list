@@ -11,7 +11,7 @@ const TodoState = (props) =>{
       const getTodo =async () =>{
         //api call
 
-        const response = await fetch(`${host}/api/todo/fetchalltasks`, { 
+        const response = await fetch(`https://todolist-30q6bf4vr-akshil-rajputs-projects.vercel.app/api/todo/fetchalltasks`, { 
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -28,7 +28,7 @@ const TodoState = (props) =>{
       const addTodo =async (task,desc) =>{
         //api call
 
-        const response = await fetch(`${host}/api/todo/addatask`, { 
+        const response = await fetch(`https://todolist-30q6bf4vr-akshil-rajputs-projects.vercel.app/api/todo/addatask`, { 
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -44,7 +44,7 @@ const TodoState = (props) =>{
       //  Delete a task
       const deleteTodo = async(id) =>{
         // API call
-        const response = await fetch(`${host}/api/todo/deletetask/${id}`, { 
+        const response = await fetch(`https://todolist-30q6bf4vr-akshil-rajputs-projects.vercel.app/api/todo/deletetask/${id}`, { 
           method: 'DELETE',
           headers: {
               'Content-Type': 'application/json',
@@ -63,7 +63,7 @@ const TodoState = (props) =>{
       const editTodo =async (id,task, desc) =>{
 
         
-        const response = await fetch(`${host}/api/todo/updatetask/${id}`, { 
+        const response = await fetch(`https://todolist-30q6bf4vr-akshil-rajputs-projects.vercel.app/api/todo/updatetask/${id}`, { 
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
