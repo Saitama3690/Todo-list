@@ -10,7 +10,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const {Name,email,password} = credentials;
-    const response = await fetch("http://localhost:5000/api/auth/createuser", { 
+    const response = await fetch("https://todolist-30q6bf4vr-akshil-rajputs-projects.vercel.app/api/auth/createuser", { 
       method: 'POST',
       headers: {
           'Content-Type': 'application/json'
