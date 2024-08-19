@@ -2,6 +2,12 @@
   text-align: center;
 }
 
+body{
+  background-image: url('images/body/body-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -36,3 +42,123 @@
     transform: rotate(360deg);
   }
 }
+
+/* App.css */
+
+.gradient-bg {
+  background: linear-gradient(to right, #6a0dad, #b04a99); /* Gradient background from purple to pink */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+.containerss {
+  background: #fff; /* White background for the container */
+  max-width: 500px; /* Restrict container width for better readability */
+  margin-top: -30vh; /* Move the container up a bit from the center */
+  padding: 2rem; /* Add padding inside the container */
+}
+
+.shadow-lg {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Enhanced shadow */
+}
+
+.shadow-wg {
+  box-shadow: 0px 2px 50px rgba(109, 177, 250, 0.67), 0 1px 3px rgba(244, 241, 241, 0.704); /* Enhanced shadow */
+}
+
+@media (max-width: 576px) {
+  .container {
+    margin: 20px; /* Adjust margin for smaller screens */
+  }
+}
+
+
+/* login signup button glow */
+
+.btn-glow {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  transition: color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-glow:hover {
+  color: #007bff; /* Adjust to your preferred blue color */
+  
+  box-shadow: 0 0 10px rgba(38, 143, 255, 0.6); /* Blue glow effect */
+}
+
+
+/* homePage styling */
+
+/* Global Styles */
+.home-gradient-bg {
+  background: linear-gradient(to right, #d5a6f1, #6a1b9a); /* Gradient background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Glowing Button */
+.btn-glow-hm {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-glow-hm:hover {
+  background-color: #007bff; /* Adjust to your preferred blue color */
+  color: white;
+  box-shadow: 0 0 15px rgba(38, 143, 255, 0.6); /* Blue glow effect */
+}
+
+/* Add Animation for Task Addition */
+.task-added {
+  animation: taskAdded 0.5s ease-in-out;
+}
+
+@keyframes taskAdded {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+
+/* modal */
+.modal-content {
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-title, .card-text {
+  color: #333;
+}
+
+
+.text-border {
+  color: #1d0053; /* Text color */
+  -webkit-text-stroke:  rgb(255, 255, 255); /* Stroke width and color */
+
+  text-shadow: 
+    1px 1px 0 #eeeded,  /* Horizontal, Vertical, Blur radius, Color */
+    -1px -1px 0 #000000,
+    1px -1px 0 #ede7e7,
+    -1px 1px 0 #000000;
+}
+
+
