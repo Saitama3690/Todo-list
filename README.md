@@ -39,6 +39,6 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ## Sign up page
 ![Screenshot (80)](https://github.com/user-attachments/assets/12bb8880-c400-4788-8c7a-38ac26039fb8)
 
-##About
+## About
 ![Screenshot (81)](https://github.com/user-attachments/assets/da9ef9e6-a34e-4f46-96f3-0b4f2cf87d84)
 
